@@ -3,3 +3,5 @@ dash_bootstrap_components
 pandas
 gunicorn
 numpy
+warnings
+requests
