@@ -38,7 +38,7 @@ def get_displayed_movies():
 
 def get_recommended_movies(new_user_ratings):
     predictions = []
-    newuser = pd.Series(np.nan, index=ratings.columns)
+    newuser = pd.Series(np.nan, index=sorted_similarity_df.columns)
     
     for movie_id, rating in new_user_ratings.items():
         movie_id_with_prefix = 'm' + str(movie_id)
